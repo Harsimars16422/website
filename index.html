@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Bot</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --discord-blue: #5865F2;
+            --discord-bg: #2C2F33;
+            --discord-dark: #23272A;
+            --text-color: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--discord-dark);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: var(--discord-bg);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--discord-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #2C2F33 0%, #23272A 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b9bbbe;
+            margin-bottom: 40px;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+
+        .btn-invite {
+            background-color: var(--discord-blue);
+            color: white;
+        }
+
+        .btn-invite:hover {
+            transform: translateY(-2px);
+            background-color: #4752C4;
+        }
+
+        /* Features Grid */
+        .features {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--discord-bg);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card h3 { color: var(--discord-blue); }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            background-color: var(--discord-bg);
+            text-align: center;
+            padding: 20px;
+            color: #72767d;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyBot</div>
+        <a href="YOUR_INVITE_LINK_HERE" class="btn btn-invite">Invite Me</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Level Up Your Server</h1>
+        <p>The ultimate moderation, fun, and utility bot for your community.</p>
+        <a href="YOUR_INVITE_LINK_HERE" class="btn btn-invite">Add to Discord</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>🛡️ Moderation</h3>
+            <p>Kick, Ban, Timeout and clean up your chat with advanced tools.</p>
+        </div>
+        <div class="card">
+            <h3>🎉 Giveaways</h3>
+            <p>Host epic giveaways with automated timers and winner selection.</p>
+        </div>
+        <div class="card">
+            <h3>🎮 Fun Games</h3>
+            <p>Engage your members with Rock Paper Scissors, Split or Steal, and more.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Awesome Bot. Hosted on Render.</p>
+    </footer>
+
+</body>
+</html>
